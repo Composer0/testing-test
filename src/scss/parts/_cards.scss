@@ -1,0 +1,44 @@
+.card-wrapper {
+    flex-direction: row;
+    margin: 0 auto;
+    @media (max-width: 1099px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        text-align: center;
+        width: 215px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 40px 20px 20px;
+        min-height: 320px;
+        box-shadow: $box-shadow;
+        @media (max-width: 1099px) {
+            width: 200px;
+            margin: 20px auto 0;
+        }
+        @media (max-width: 991px) {
+            width: 234px;
+        }
+        .img-container {
+            height: 100px;
+        }
+        img {
+            width: 90px;
+            align-self: center;
+            object-fit: contain;
+        }
+        .card-text {
+            font-weight: 500;
+        }
+        .card-text-color {
+            color: $blue;
+            font-weight: 900;
+            margin:30px 0 0;
+        }
+        .login-portal-link {color:green; font-weight: 700;}
+        // .card-text {}
+    }
+}

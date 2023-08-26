@@ -1,0 +1,35 @@
+{
+  "name": "Template",
+  "version": "1.0.0",
+  "description": "Template that uses gulp and browserSync to detect changes and intuitively refresh the browser.",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "webpack",
+    "lite-server": "lite-server"
+  },
+  "author": "Orion Palmer",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-dev": "^0.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "lite-server": "^2.6.1",
+    "normalize-css": "^2.3.1",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "gulp-connect": "^5.7.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "sass": "^1.63.4"
+  }
+}

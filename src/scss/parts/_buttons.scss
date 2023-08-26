@@ -1,0 +1,114 @@
+@mixin button-base {
+    font-size: 1rem;
+    border-radius: $radius;
+    padding: 0.7em 1.5em;
+	line-height: 1.3em; // adjustment for buttons with icons since the icon is 1.3em.
+    box-shadow: none;
+	font-family: $sans;
+	font-weight: 600;
+    border: 2px solid transparent;
+    background-clip: border-box;
+    will-change: transform;
+	&, span, .fl-button-text, * {
+		transition: all 0.5s $ease-out;
+    }
+    &:hover {
+        transform: translatey(-0.125rem);
+        box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2);
+    }
+}
+
+// default button styles and effects.
+// duplicate this ( or change it ) to create more varients.
+// diferent size buttons should be changed by adjusting the fonts with a class at the bottom of this file.
+@mixin button-default {
+    background-color: $accent;
+	&, span, .fl-button-text, * {
+		color: $white;
+    }
+	&:hover {
+        background-color: lighten($accent, 5%);
+		&, span, .fl-button-text, * {
+			color: $white;
+		}
+	}
+}
+
+@mixin button-orange {
+    background-color: $orange;
+	&, span, .fl-button-text, * {
+		color: $white;
+    }
+	&:hover {
+        background-color: lighten($accent, 5%);
+		&, span, .fl-button-text, * {
+			color: $white;
+		}
+	}
+}
+
+// A hollow button style that inherit the text color of parent elements.
+@mixin button-hollow {
+    background-color: transparent;
+    border-color: inherit;
+	&, span, .fl-button-text, * {
+		color: inherit;
+    }
+	&:hover {
+        background-color: white;
+        border-color: white;
+		&, span, .fl-button-text, * {
+			color: $accent;
+		}
+	}
+}
+@mixin button-hollow-orange-text {
+    background-color: transparent;
+    border-color: $orange;
+	&, span, .fl-button-text, * {
+		color: $orange;
+    }
+	&:hover {
+        background-color: white;
+        border-color: $orange;
+		&, span, .fl-button-text, * {
+			color: $orange;
+		}
+	}
+}
+
+@mixin button-hollow-white {
+    background-color: transparent;
+    border-color: #fff;
+	&, span, .fl-button-text, * {
+		color: #fff;
+    }
+	&:hover {
+        background-color: #fff;
+        border-color: #fff;
+		&, span, .fl-button-text, * {
+			color: #007481;
+		}
+	}
+}
+
+.btn-padding {
+    padding: 20px 60px;
+}
+
+#body-wrapper .btn {
+	@include button-base;
+    @include button-default;
+    // add extra class styles here
+    &.btn-orange { @include button-orange; }
+    &.btn-hollow { @include button-hollow; }
+    &.btn-hollow-orange-text { @include button-hollow-orange-text; }
+    &.btn-hollow-white { @include button-hollow-white; }
+	&.btn-large { font-size: 20px; }
+	&.btn-small { font-size: 14px; }
+}
+
+.btn-text-style {
+    font-size: 17px !important;
+    font-weight: 900 !important;
+}

@@ -1,0 +1,99 @@
+#form {
+    max-width: 733px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .ao-form input:not([type="radio"]):not([type="checkbox"]), input, textarea {
+        border: 1px solid $blue;
+        border-radius: 8px;
+        color: $blue;
+        padding: 15px 30px;
+        font-size: 1rem;
+        margin-bottom: 12px;
+        font-weight: 700;
+    }
+
+    .ao-form input:not([type="radio"]):not([type="checkbox"]) {
+        border: 1px solid $blue;
+        border-radius: 12px;
+        padding: 15px 30px;
+        font-size: 1rem;
+        margin-bottom: 12px;
+        font-weight: 700;
+        }
+    
+    .ao-form input:not([type="radio"]):not([type="checkbox"]) {
+        width:100%;
+        display:block;
+        box-sizing:border-box;
+        border-radius:8px !important;
+        padding:5px
+    }
+    
+
+    .ao-form input:not([type="radio"]):not([type="checkbox"])::placeholder , input::placeholder, textarea::placeholder {
+        color: $blue !important;
+        font-weight: 700 !important;
+    }
+
+    .ao-form input:not([type="radio"]):not([type="checkbox"]):focus , input:focus, textarea:focus {
+        outline: none !important;
+        border: 1px solid $orange !important;
+    }
+
+    #form-submit {
+        background-color: $green;
+        color: $white;
+        font-weight: 900;
+        max-width: 150px;
+        margin: 30px auto 0;
+        border-radius: 16px;
+        font-size: 1.25;
+        padding: 15px 50px;
+    }
+
+    .ao-form button.ao-form-submit, #form-submit-university {
+        background-color: $orange;
+        color: $white;
+        font-weight: 900;
+        max-width: 150px;
+        border-radius: 16px;
+        border: none;
+        font-size: 1.25;
+        padding: 15px 50px;
+        margin-top: 20px;
+    }
+
+    // Span that is normally white space but can display error message.
+    .ao-form .ao-block-wrapper input+span.ao-form-error-message,
+    .ao-form .ao-block-wrapper select+span.ao-form-error-message,
+    .ao-form .ao-block-wrapper textarea+span.ao-form-error-message,
+    .ao-form .ao-block-wrapper div.ao-form-field-date-wrapper>span.ao-form-error-message,
+    .ao-form .ao-block-wrapper div.ao-combo-layout+span.ao-form-error-message {
+     display:block;
+     clear:both;
+     visibility:hidden;
+     line-height:1.5;
+     display: none !important;
+    }
+
+    // Button
+    #block-b1685561190089 div {
+        text-align: left !important;
+    }
+    
+    @media (max-width: 767px) {
+        #block-b1685561190089 div {
+            text-align: center !important;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+
+
+       
+
+    

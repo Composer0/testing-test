@@ -1,0 +1,94 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-family: $primary;
+}
+
+h1 {
+    font-size: clamp(2rem , 5vw + 16px, 4.565rem);
+    font-weight: 900;
+    margin-bottom: 16px;
+    color: $white;
+    span {
+        font-weight: normal;
+    }
+}
+
+h2 {
+    font-size: clamp(1.7rem , 5vw + 16px, 2rem);
+    line-height: 1.2em;
+    color: $blue;
+    font-weight: 900;
+    span {
+        font-weight: 700;
+        font-style: italic;
+    }
+}
+
+h3 {
+    font-size: clamp(1.5rem , 5vw + 16px, 1.69rem);
+    color: $black;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: clamp(2rem , 5vw + 16px, 3.625rem);
+    font-weight: 900;
+}
+
+h5 {
+    font-size: clamp(1.8rem , 5vw + 16px, 2.375rem);
+    font-weight: 900;
+    color:$white;
+}
+
+h6 {
+    font-size: clamp(1.6rem , 5vw + 16px, 1.75rem);
+    font-weight: 900;
+    color:$white;
+}
+
+p {
+    font-size: clamp(16px , 5vw + 16px, 1.125rem);
+    line-height: 1.4em;
+    font-weight: 500;
+    color: $black;
+}
+
+//text colors
+.blue-text {
+    color: $blue !important; 
+}
+.light-blue-text {
+    color: $blue-light !important; 
+}
+.orange-text {
+    color: $orange !important;
+}
+.green-text {
+    color: $green !important;
+}
+
+.font-italic {
+    font-style: italic !important;
+}
+
+.font-bold {
+    font-weight: bold !important;
+}
+
+.font-black {
+    font-weight: 900 !important;
+}
+
+
+
+
+.button-hollow-orange {
+    color: $orange !important;
+    // border: 3px solid $orange !important;
+    font-size: 17px;
+    // &::hover {
+    //     color: $white !important;
+    //     background-color: $orange !important;
+    //     border: 3px solid $white !important;
+}
+
